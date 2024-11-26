@@ -32,7 +32,7 @@ LOA ON은 LOSTARK의 연 2회 대규모 행사로, 공연, 업데이트 방향 �
 #### * 유튜버에 따른 데이터 개수와 로아온 기간별 데이터 비율
 ![그림판 수정](https://github.com/user-attachments/assets/eb94163c-77c0-4d9f-9e11-e6ee1a544343)
 ## 3. 학습데이터
-전체 데이터 12,235건에서 업데이트 날짜별 비율을 반영해 2,000건을 추출한 뒤, 긍정 데이터를 1로, 부정 데이터를 0으로 라벨링하고 중립 데이터를 제거하여 총 1,862건의 학습 데이터를 생성하였다. 해당 데이터를 활용해 모델을 학습한 결과, 학습 정확도는 54%, 검증 정확도는 57%로 낮아 모델 성능이 부족하다고 판단하였다.
+원시 데이터 12,235건에서 업데이트 날짜별 비율을 반영해 2,000건을 추출한 뒤, 긍정 데이터를 1로, 부정 데이터를 0으로 라벨링하고 중립 데이터를 제거하여 총 1,862건의 학습 데이터를 생성하였다. 해당 데이터를 활용해 모델을 학습한 결과, 학습 정확도는 54%, 검증 정확도는 57%로 낮아 모델 성능이 부족하다고 판단하였다.
 
 이에 라벨링 오류 가능성을 고려해 ChatGPT를 활용하여 데이터를 재라벨링하는 과정에서 중립 데이터를 제거하고, 최종적으로 1,204건을 추출해 학습을 진행했다. 이 과정에서 ChatGPT가 추출한 1,204건과 직접 라벨링한 1,862건 중 겹치는 1,204건에서 101건의 라벨이 불일치하는 것으로 확인되었다. 그러나 재라벨링된 데이터를 활용한 학습에서도 검증 정확도에는 큰 변화가 없었다.
 
@@ -48,3 +48,24 @@ LOA ON은 LOSTARK의 연 2회 대규모 행사로, 공연, 업데이트 방향 �
 
 #### * 하이퍼파라메터 변경에 따른 정확도 비교
 ![정확도 비교](https://github.com/user-attachments/assets/f8c8b60f-55a4-410a-bdb4-6bb2d7a54c47)
+
+## 4. KOELECTRA로 학습한 모델을 원시 데이터에 적용한 결과
+### 개발환경
+
+<img src="https://img.shields.io/badge/python-%233776AB.svg?&style=for-the-badge&logo=python&logoColor=white" /><img src="https://img.shields.io/badge/pycharm-%23000000.svg?&style=for-the-badge&logo=pycharm&logoColor=white" />
+
+### 패키지
+
+<img src="https://img.shields.io/badge/pandas-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" /><img src="https://img.shields.io/badge/pytorch-%23EE4C2C.svg?&style=for-the-badge&logo=pytorch&logoColor=white" /><img src="https://img.shields.io/badge/tensorflow-%23FF6F00.svg?&style=for-the-badge&logo=tensorflow&logoColor=white" /><img src="https://img.shields.io/badge/numpy-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
+
+| 업데이트 날짜 | 긍정 | 부정 |
+|--------|----------|-------------|
+|전체| 8641|3579|
+|2021년 상반기|592|89|
+|2021년 하반기|2387|374|
+|2022년 상반기|1158|205|
+|2022년 하반기|428|182|
+|2023년 상반기|451|209|
+|2023년 하반기|1755|2053|
+|2024년 상반기|993| 148|
+|2024년 하반기| 877|319|
