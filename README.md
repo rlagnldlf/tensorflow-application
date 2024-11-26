@@ -58,14 +58,14 @@ LOA ON은 LOSTARK의 연 2회 대규모 행사로, 공연, 업데이트 방향 �
 
 <img src="https://img.shields.io/badge/pandas-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" /><img src="https://img.shields.io/badge/pytorch-%23EE4C2C.svg?&style=for-the-badge&logo=pytorch&logoColor=white" /><img src="https://img.shields.io/badge/tensorflow-%23FF6F00.svg?&style=for-the-badge&logo=tensorflow&logoColor=white" /><img src="https://img.shields.io/badge/numpy-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
 
-| 업데이트 날짜 | 긍정 | 부정 |
-|--------|----------|-------------|
-|전체| 8641|3579|
-|2021년 상반기|592|89|
-|2021년 하반기|2387|374|
-|2022년 상반기|1158|205|
-|2022년 하반기|428|182|
-|2023년 상반기|451|209|
-|2023년 하반기|1755|2053|
-|2024년 상반기|993| 148|
-|2024년 하반기| 877|319|
+| 기간 | 긍정적 댓글 | 부정적 댓글 |전체 수|
+|--------|----------|-------------|-------|
+|전체| 8641|3579|12220|
+|2021년 상반기|592|89|681|
+|2021년 하반기|2387|374|2761|
+|2022년 상반기|1158|205|1363|
+|2022년 하반기|428|182|610|
+|2023년 상반기|451|209|	660|
+|2023년 하반기|1755|2053|3808|
+|2024년 상반기|993| 148|1141|
+|2024년 하반기| 877|319|1196|
