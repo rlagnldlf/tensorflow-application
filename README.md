@@ -49,7 +49,7 @@ LOA ON은 LOSTARK의 연 2회 대규모 행사로, 공연, 업데이트 방향 �
 #### * 하이퍼파라메터 변경에 따른 정확도 비교
 ![정확도 비교](https://github.com/user-attachments/assets/f8c8b60f-55a4-410a-bdb4-6bb2d7a54c47)
 
-## 4. KOELECTRA로 학습한 모델을 원시 데이터에 적용한 결과
+## 4. 결과
 ### 개발환경
 
 <img src="https://img.shields.io/badge/python-%233776AB.svg?&style=for-the-badge&logo=python&logoColor=white" /><img src="https://img.shields.io/badge/pycharm-%23000000.svg?&style=for-the-badge&logo=pycharm&logoColor=white" />
@@ -58,6 +58,7 @@ LOA ON은 LOSTARK의 연 2회 대규모 행사로, 공연, 업데이트 방향 �
 
 <img src="https://img.shields.io/badge/pandas-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" /><img src="https://img.shields.io/badge/pytorch-%23EE4C2C.svg?&style=for-the-badge&logo=pytorch&logoColor=white" /><img src="https://img.shields.io/badge/tensorflow-%23FF6F00.svg?&style=for-the-badge&logo=tensorflow&logoColor=white" /><img src="https://img.shields.io/badge/numpy-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
 
+### KOELECTRA로 학습한 모델을 원시 데이터에 적용한 결과
 | 기간 | 긍정적 댓글 | 부정적 댓글 |전체 수|
 |--------|----------|-------------|-------|
 |전체| 8641|3579|12220|
@@ -69,3 +70,5 @@ LOA ON은 LOSTARK의 연 2회 대규모 행사로, 공연, 업데이트 방향 �
 |2023년 하반기|1755|2053|3808|
 |2024년 상반기|993| 148|1141|
 |2024년 하반기| 877|319|1196|
+
+전체적으로 긍정적 댓글이 부정적 댓글보다 많지만, 2023년 하반기에는 부정적 댓글(2053개)이 긍정적 댓글(1755개)을 초과하는 현상이 발생했다. 이는 특정 사건에 대한 부정적인 반응이 크게 늘었음을 보여준다. 그러나 2024년 상반기에는 부정적 댓글(148개)과 긍정적 댓글(993개)의 비율을 보면, 긍정적인 반응이 다시 우세를 보이며 분위기를 잘 회복한 것으로 보인다.
