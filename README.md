@@ -33,7 +33,8 @@ LOA ON은 LOSTARK의 연 2회 대규모 행사로, 공연, 업데이트 방향 �
 ![그림판 수정](https://github.com/user-attachments/assets/eb94163c-77c0-4d9f-9e11-e6ee1a544343)
 ## 3. 학습
 ### 3.1 KOELECTRA
-![출처](https://bijular.medium.com/electra-vs-bert-a-comparative-study-36f07ba88e61)
+#### * ELECTRA 모델의 학습 구조
+![KOELECTRA](https://github.com/user-attachments/assets/cfa1b147-bde6-43b4-aeab-43e1554018ab)
 ### 3.2 데이터 정재
 원시 데이터 12,235건에서 업데이트 날짜별 비율을 반영해 2,000건을 추출한 뒤, 긍정 데이터를 1로, 부정 데이터를 0으로 라벨링하고 중립 데이터를 제거하여 총 1,862건의 학습 데이터를 생성하였다. 해당 데이터를 활용해 모델을 학습한 결과, 학습 정확도는 54%, 검증 정확도는 57%로 낮아 모델 성능이 부족하다고 판단하였다.
 
