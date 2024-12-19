@@ -46,7 +46,6 @@ KOELECTRA는 ELECTRA 모델 아키텍처를 기반으로 한국어 데이터에 
 
 ### 3.3 하이퍼파라미터 튜닝
 이를 개선하기 위해 Electra 논문을 참고하여 하이퍼파라미터를 아래 표와 같이 수정한 후 재학습을 수행한 결과, 학습 정확도는 99%, 검증 정확도는 87%로 크게 향상되며 유의미한 모델 성능을 확보할 수 있었다.[[Electra 논문 링크](https://arxiv.org/pdf/2003.10555)]
-![스크린샷 2024-11-26 111427](https://github.com/user-attachments/assets/28902182-1efd-4a9a-843d-f9b5b75fe953)
 
 #### * 하이퍼파라메터 값 변경 사항
 | 변경전 |  | 변경후 |  |
@@ -54,6 +53,8 @@ KOELECTRA는 ELECTRA 모델 아키텍처를 기반으로 한국어 데이터에 
 |batch_size | 16    | batch_size       | 32  |
 |learning rate | 3e-4    | learning rate       | 1e-4  |
 |num_warmup_steps | 0    | num_warmup_steps       | 0.1  |
+
+![스크린샷 2024-11-26 111427](https://github.com/user-attachments/assets/28902182-1efd-4a9a-843d-f9b5b75fe953)
 
 #### * 하이퍼파라메터 변경에 따른 정확도 비교
 ![정확도 비교](https://github.com/user-attachments/assets/f8c8b60f-55a4-410a-bdb4-6bb2d7a54c47)
